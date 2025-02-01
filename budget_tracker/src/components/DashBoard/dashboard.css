@@ -1,0 +1,237 @@
+*{
+    box-sizing: border-box;
+}
+
+.gradient-bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    background: linear-gradient(to right, #00115a, #4916c2cc);
+}
+
+.navbar{
+    display: flex;
+    width: 100%;
+    font-size: large;
+    font: 1.2em sans-serif;
+    background-color: rgb(48, 13, 128);
+    justify-content: space-between;
+    color: white;
+    padding: 1rem;
+    border-bottom: 2px solid#aaa8ff;
+}
+
+.bg-info{
+    padding: 1rem;
+    width:30vw;
+}
+
+.logout-btn{
+    border: none;
+    padding: 5px;
+    width: 100%;
+    font-weight: bold;
+    font-family: sans-serif;
+    align-items: flex-end;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+}
+.Card-Container{
+    display: flex;
+    padding: 1rem;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.total-budget,.remaining-budget,.transaction{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    border: 1px dashed yellow;
+}
+span{
+    font: 2em sans-serif;
+    align-self:flex-end;
+}
+
+.add-transaction{
+    font-weight: bold;
+    color: #ff4b1e;
+    border: none;
+    border-radius: 5ex;
+    padding: 10px;
+    box-shadow: 1px 0px 20px 10px #aaa8ff;
+}
+
+.transaction-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 1rem;
+    height: 100%;
+}
+
+#title{
+    font-weight: bold;
+    color: white;
+
+}
+
+.search-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+#search-input{
+    border-radius: 10px;
+   border: none;
+    width: 50%;
+    padding: 0.5rem;
+    background-color: #00115a;
+    color: white;
+    letter-spacing: 2px;
+}
+
+#search-input:focus{
+    outline: none;
+    text-shadow: 0px 0px 11px #ffffff;
+    font: sans-serif;
+    letter-spacing: 2px;
+}
+
+#search-btn{
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font: sans-serif;
+    padding: .3rem;
+    width: 10%;
+    background-color: #00115a;
+    border: 2px solid white;
+    font-size: large;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 11px #ffffff;
+
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 2px dashed #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  th{
+    border: 2px solid white;
+  }
+  tr {
+    color: white;
+    border:2px dashed #dddddd;
+  }
+
+  .member{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+  }
+
+  .edit,.delete{
+    background-color: transparent;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    border: 1px solid white;
+  }
+
+
+.popup-form{
+    position: absolute;
+    top: 20%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: tomato;
+    padding: 1rem;
+    border: 2px dashed yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+.popup-form label{
+    color: white;
+    width: 100%;
+}
+
+.popup-form input {
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    color: rgb(212, 24, 128);
+    font-family:inherit;
+    outline: none;
+    cursor: text;
+}
+
+.popup-form input::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+    filter: invert(0.6);
+    cursor: pointer;
+}
+
+.payerform {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 0.9rem;
+}
+
+.select-form {
+    font-size: small;
+    height: 100%;
+    margin: 10px;
+}
+
+.div {
+    display: flex;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+.create {
+    border: none;
+    padding: 0.5rem;
+    width: 40%;
+    box-shadow:inset 1px 0px 20px 10px #d4ff0094;
+    border-radius: 10px;
+    font-weight: 700;
+    color: orangered;
+} 
+
+body.add-transaction-open .gradient-bg{
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    filter: blur(4px);
+}
